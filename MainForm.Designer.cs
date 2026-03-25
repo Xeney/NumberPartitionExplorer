@@ -32,11 +32,7 @@
             aboutMenuItem = new ToolStripMenuItem();
             taskMenuItem = new ToolStripMenuItem();
             exitMenuItem = new ToolStripMenuItem();
-            lblInput = new Label();
-            txtInput = new TextBox();
-            btnCalculate = new Button();
-            txtOutput = new TextBox();
-            txtTrace = new TextBox();
+            label1 = new Label();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -71,66 +67,23 @@
             exitMenuItem.Text = "Выход";
             exitMenuItem.Click += exitMenuItem_Click;
             // 
-            // lblInput
+            // label1
             // 
-            lblInput.AutoSize = true;
-            lblInput.Location = new Point(29, 83);
-            lblInput.Name = "lblInput";
-            lblInput.Size = new Size(200, 15);
-            lblInput.TabIndex = 1;
-            lblInput.Text = "Введите натуральное число N (>1):";
-            // 
-            // txtInput
-            // 
-            txtInput.Location = new Point(235, 80);
-            txtInput.MaxLength = 10;
-            txtInput.Name = "txtInput";
-            txtInput.Size = new Size(124, 23);
-            txtInput.TabIndex = 2;
-            txtInput.TextAlign = HorizontalAlignment.Center;
-            // 
-            // btnCalculate
-            // 
-            btnCalculate.Location = new Point(269, 109);
-            btnCalculate.Name = "btnCalculate";
-            btnCalculate.Size = new Size(90, 23);
-            btnCalculate.TabIndex = 3;
-            btnCalculate.Text = "Вычислить";
-            btnCalculate.UseVisualStyleBackColor = true;
-            btnCalculate.Click += btnCalculate_Click;
-            // 
-            // txtOutput
-            // 
-            txtOutput.Font = new Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            txtOutput.Location = new Point(365, 80);
-            txtOutput.Multiline = true;
-            txtOutput.Name = "txtOutput";
-            txtOutput.ReadOnly = true;
-            txtOutput.ScrollBars = ScrollBars.Vertical;
-            txtOutput.Size = new Size(194, 161);
-            txtOutput.TabIndex = 4;
-            // 
-            // txtTrace
-            // 
-            txtTrace.Font = new Font("Consolas", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            txtTrace.Location = new Point(565, 80);
-            txtTrace.Multiline = true;
-            txtTrace.Name = "txtTrace";
-            txtTrace.ReadOnly = true;
-            txtTrace.ScrollBars = ScrollBars.Both;
-            txtTrace.Size = new Size(194, 161);
-            txtTrace.TabIndex = 5;
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label1.Location = new Point(181, 144);
+            label1.Name = "label1";
+            label1.Size = new Size(412, 37);
+            label1.TabIndex = 1;
+            label1.Text = "Лабораторная работа №1";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(781, 347);
-            Controls.Add(txtTrace);
-            Controls.Add(txtOutput);
-            Controls.Add(btnCalculate);
-            Controls.Add(txtInput);
-            Controls.Add(lblInput);
+            Controls.Add(label1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             MaximumSize = new Size(797, 386);
@@ -150,10 +103,6 @@
         private ToolStripMenuItem aboutMenuItem;
         private ToolStripMenuItem taskMenuItem;
         private ToolStripMenuItem exitMenuItem;
-        private Label lblInput;
-        private TextBox txtInput;
-        private Button btnCalculate;
-        private TextBox txtOutput;
-        private TextBox txtTrace;
+        private Label label1;
     }
 }
